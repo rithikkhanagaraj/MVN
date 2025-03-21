@@ -12,7 +12,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/rithikkhanagaraj/MVN.git', branch: 'main'
+               git branch: 'main', url: 'https://github.com/rithikkhanagaraj/MVN.git'
+
             }
         }
 
